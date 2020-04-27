@@ -7,14 +7,24 @@
 }
 
 body {
-    font-family: 'Baloo Paaji 2', cursive;
+    height: 100vh;
+    font-family: 'Baloo Paaji 2', 'cursive';
+    font-size: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #272727;
+}
+
+h1 {
+    color: #ff652f;
 }
 
 /* Wrappers */
 #app {
     width: 60%;
+    min-width: 600px;
 }
 
 .columns {
@@ -28,15 +38,22 @@ body {
     width: 80px;
     height: 80px;
     margin: 5px;
-    border: 2px solid #CCC;
+    background-color: #747474;
+    border: 2px solid #747474;
     border-radius: 5px;
     cursor: pointer;
+    transform: rotate(360deg);
+    transition: background 500ms, border 500ms, transform 500ms;
 }
 
 .green {
-    background-color: #73f077;
+    background-color: #14a76c;
+    border: 2px solid #14a76c;
+    transform: rotate(0deg);
 }
 
 .yellow {
-    background-color: #f0ec73;
+    background-color: #ffe400;
+    border: 2px solid #ffe400;
+    transform: rotate(0deg);
 }
